@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Волжский Зодчий</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <header class="page-header">
+     <nav class="main-nav">
+       <a href="/" class="main-nav__logo"><img src="img/logo_vlzhz.jpg" alt="logo_vlzhz.jpg"></a>
+       <ul class="main-nav__items">
+         <li class="main-nav__item"><a href="/" class="main-nav__link">Каталог квартир</a></li>
+         <li class="main-nav__item"><a href="/" class="main-nav__link">Условия покупки</a></li>
+         <li class="main-nav__item"><a href="/" class="main-nav__link">Акции</a></li>
+         <li class="main-nav__item"><a href="/" class="main-nav__link">О компании</a></li>
+         <li class="main-nav__item"><a href="/" class="main-nav__link">Контакты</a></li>
+       </ul>
+       <ul class="main-nav__contacts">
+        <li><a href="mailto:volzhz_doc@bk.ru" class="main-nav__link">volzhz_doc@bk.ru</a></li>
+        <li><a href="mailto:volzhz_kv@mail.ru" class="main-nav__lin">volzhz_kv@mail.ru</a></li>
+        <li><a href="tel:+79308100997" class="main-nav__link">+79308100997</a></li>
+      </ul>
+      <button class="main-nav__button" type="button">Open</button>
+     </nav>
+   </header>
+   <main class="page-main">
+     <div class="promo-slider">
+       <div class="promo-slider__wrapper">
+         <div class="promo-slider__slide  slider-first">
+           <a href="/" class="promo-slider__title">ЖК КОРАБЛИ</a>
+           <a href="/" class="promo-slider__button">Квартиры в продаже</a>
+         </div>
+       </div>
+     </div>
+     <section class="appartments">
+       <h1 class="appartments-title">Купить квартиру в Нижнем Новгороде</h1>
+       <div class="search">
+        <div class="search__wrapper">
+          <span class="search__title">Выбрать квартиру</span>
+          <form class="search__form">
+            <div class="search__input">
+              <div class="search__input-wrapper">
+                <span class="search__input-label">Название ЖК</span>
+                <ul class="search__input-checkbox">
+                  <li>
+                    <input type="checkbox" name="complex" id="Burnakovsky" value="ЖК Бурнаковский" class="search__checkbox">
+                    <label for="Burnakovsky">ЖК Бурнаковский</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="complex" id="Monchegoriya" value="ЖК Мончегория" class="search__checkbox">
+                    <label for="Monchegoriya">ЖК Мончегория</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="complex" id="Korably" value="ЖК Корабли" class="search__checkbox">
+                    <label for="Korably">ЖК Корабли</label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="search__input-wrapper">
+                <span class="search__input-label">Комнатность</span>
+                <ul class="search__input-checkbox">
+                  <li>
+                    <input type="checkbox" name="number" id="studio" value="Студия" class="search__checkbox">
+                    <label for="studio">Студия</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="number" id="one" value="one" class="search__checkbox">
+                    <label for="one">1-k</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="number" id="two" value="two" class="search__checkbox">
+                    <label for="two">2-k</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="number" id="three" value="three" class="search__checkbox">
+                    <label for="three">3-k</label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="search__input-wrapper">
+                <span class="search__input-label">Год сдачи, до</span>
+                <ul class="search__input-checkbox">
+                  <li>
+                    <input type="checkbox" name="year" id="2017" value="2017" class="search__checkbox">
+                    <label for="2017">2017</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="year" id="2018" value="2018" class="search__checkbox">
+                    <label for="2018">2018</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="year" id="2019" value="2019" class="search__checkbox">
+                    <label for="2019">2019</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="year" id="2020" value="2020" class="search__checkbox">
+                    <label for="2020">2020</label>
+                  </li>
+                </ul>
+              </div>
+              <button type="button" class="search__input-button">Show</button>
+            </div>
+            <input type="checkbox" name="funds" id="otdelka" value="Отделка">
+            <label for="otdelka">Отделка</label>
+            
+            <input type="checkbox" name="funds" id="ipoteka" value="Ипотека">
+            <label for="ipoteka">Ипотека</label>
+
+            <input type="checkbox" name="funds" id="kapital" value="Материнский капитал">
+            <label for="kapital">Материнский капитал</label>
+
+            <button type="button" class="button  search__button">Смотреть все квартиры</button>
+          </form>
+        </div>
+        </div>
+        <div class="appartments__wrapper">
+        <ul class="appartments__list">
+          <li class="appartments__item">
+            <a href="/">
+              <div class="appartments__item-wrapper  appartments__item-wrapper--first">
+                <!-- <img class="appartments__item-img" src="img/mikrorajon-burnakovskij.jpg" alt="mikrorajon-burnakovskij.jpg" /> -->
+                <span class="appartments__item-title">ЖК Бурнаковский</span>
+                <span class="appartments__item-add">квартиры от 1 млн руб</span>
+              </div>
+            </a>
+          </li>
+          <li class="appartments__item">
+            <a href="/">
+              <div class="appartments__item-wrapper  appartments__item-wrapper--second">
+                <!-- <img class="appartments__item-img" src="img/monchegoria.jpeg" alt="monchegoria.jpeg" /> -->
+                <span class="appartments__item-title">ЖК Мончегория</span>
+                <span class="appartments__item-add">квартиры от 1 млн руб</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="banks">
+      <div class="banks__wrapper">
+        <ul class="banks__items">
+          <li class="banks__item"><a href="/"><img src="img/VTB24_Logo.png" alt="vtb" class="banks__link"></a></li>
+          <li class="banks__item"><a href="/"><img src="img/0x430.png" alt="sberbank" class="banks__link"></a></li>
+          <li class="banks__item"><a href="/"><img src="img/Alfa-Bank.svg" alt="alfa-bank" class="banks__link"></a></li>
+          <li class="banks__item"><a href="/"><img src="img/content_Logo_OpenBank.png" alt="otkrytie" class="banks__link"></a></li>
+        </ul>
+        <h2 class="banks__title"><a href="/">УЗНАТЬ ВСЕ УСЛОВИЯ КРЕДИТОВАНИЯ И АКЦИИ</a></h2>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <div class="contacts__text">
+          <h3 class="contacts__title">Телефон отдела продаж</h3>
+          <a href="tel:+79308100997" class="contacts__tel">+7 (930) 810 09 97</a>
+          <br>
+          <a href="tel:+79200135535" class="contacts__tel">+7 (920) 013-55-35</a>
+          <br>
+          <a href="/" class="contacts__adress">Нижний Новгород<br>Янки Купалы, 36</a>
+        </div>
+        <div class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4584.931658202063!2d43.839833684783336!3d56.23720039423585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414e2b9a3217713d%3A0xbf01aa7a48fd1b59!2z0YPQuy4g0K_QvdC60Lgg0JrRg9C_0LDQu9GLLCAzNiwg0J3QuNC20L3QuNC5INCd0L7QstCz0L7RgNC-0LQsINCd0LjQttC10LPQvtGA0L7QtNGB0LrQsNGPINC-0LHQuy4sIDYwMzE0Mg!5e0!3m2!1sru!2sru!4v1510258192444" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__section">
+        <span class="page-footer__title">О КОМПАНИИ</span>
+        <p class="page-footer__text">ООО “Волжский Зодчий” осуществляет продажу квартир в новостройках по ценам ниже рыночных. Мы предлагаем квартиры только от проверенных застройщиков, с котоыми сотрудничаем сами.</p>
+      </div>
+      <div class="page-footer__section">
+        <span class="page-footer__title">ОБЪЕКТЫ В ПРОДАЖЕ</span>
+        <div class="page-footer__links">
+          <a href="/" class="page-footer__link">ЖК КОРАБЛИ</a><br>
+          <a href="/" class="page-footer__link">ЖК МОНЧЕГОРИЯ</a><br>
+          <a href="/" class="page-footer__link">ЖК БУРНАКОВСКИЙ</a>
+        </div>
+      </div>
+      <div class="page-footer__section">
+        <span class="page-footer__title">ОФИС ПРОДАЖ</span>
+        <div class="page-footer__contacts">
+          <span class="page-footer__contacts-title">Телефоны офиса продаж:</span>
+          <a href="tel:+79308100997" class="page-footer__contacts-tel">+7 (930) 810 09 97</a>
+          <a href="tel:+79200135535" class="page-footer__contacts-tel">+7 (920) 013-55-35</a>
+          <br>
+          <span class="page-footer__contacts-title">Отправить заявку:</span>
+          <a href="mailto:volzhz_kv@mail.ru" class="page-footer__contacts-email">volzhz_kv@mail.ru</a>
+          <a href="mailto:volzhz_doc@bk.ru" class="page-footer__contacts-email">volzhz_doc@bk.ru</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
