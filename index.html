@@ -11,8 +11,8 @@
    <header class="page-header">
      <nav class="main-nav">
        <a href="/" class="main-nav__logo"><img src="img/logo_vlzhz.jpg" alt="logo_vlzhz.jpg"></a>
-       <ul class="main-nav__items">
-         <li class="main-nav__item"><a href="/" class="main-nav__link">Каталог квартир</a></li>
+       <ul class="main-nav__items  main-nav__items--closed">
+         <li class="main-nav__item"><a href="appart.html" class="main-nav__link">Каталог квартир</a></li>
          <li class="main-nav__item"><a href="/" class="main-nav__link">Условия покупки</a></li>
          <li class="main-nav__item"><a href="/" class="main-nav__link">Акции</a></li>
          <li class="main-nav__item"><a href="/" class="main-nav__link">О компании</a></li>
@@ -27,24 +27,42 @@
      </nav>
    </header>
    <main class="page-main">
-     <div class="promo-slider">
-       <div class="promo-slider__wrapper">
-         <div class="promo-slider__slide  slider-first">
-           <a href="/" class="promo-slider__title">ЖК КОРАБЛИ</a>
-           <a href="/" class="promo-slider__button">Квартиры в продаже</a>
-         </div>
-       </div>
-     </div>
-     <section class="appartments">
-       <h1 class="appartments-title">Купить квартиру в Нижнем Новгороде</h1>
-       <div class="search">
-        <div class="search__wrapper">
+      <div class="promo-slider">
+        <div class="promo-slider__wrapper  fade">
+          <img src="img/korabli.jpg" alt="korabli.jpg" style="width: 100%; height: 500px;">
+          <a href="/" class="promo-slider__title">ЖК КОРАБЛИ</a>
+          <a href="/" class="promo-slider__button">Квартиры в продаже</a>
+        </div>
+        <div class="promo-slider__wrapper  fade">
+          <img src="img/monchegoria.jpeg" alt="monchegoria.jpeg" style="width: 100%; height: 500px;">
+          <a href="/" class="promo-slider__title">ЖК Мончегория</a>
+          <a href="/" class="promo-slider__button">Квартиры в продаже</a>
+        </div>
+        <div class="promo-slider__wrapper  fade">
+          <img src="img/mikrorajon-burnakovskij.jpg" alt="mikrorajon-burnakovskij" style="width: 100%; height: 500px;">
+          <a href="/" class="promo-slider__title">ЖК Бурнаковский</a>
+          <a href="/" class="promo-slider__button">Квартиры в продаже</a>
+        </div>
+        <a onclick="plusSlides(-1)" class="prev">&#10094</a>
+        <a onclick="plusSlides(1)" class="next">&#10095</a>
+        <div class="promo-slider__dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+      
+      <section class="appartments">
+        <h1 class="appartments-title">Купить квартиру в Нижнем Новгороде</h1>
+      </section>
+        <div class="search">
+          <div class="search__wrapper">
           <span class="search__title">Выбрать квартиру</span>
           <form class="search__form">
             <div class="search__input">
               <div class="search__input-wrapper">
                 <span class="search__input-label">Название ЖК</span>
-                <ul class="search__input-checkbox">
+                <ul class="search__input-checkbox  search__input-checkbox--closed">
                   <li>
                     <input type="checkbox" name="complex" id="Burnakovsky" value="ЖК Бурнаковский" class="search__checkbox">
                     <label for="Burnakovsky">ЖК Бурнаковский</label>
@@ -62,7 +80,7 @@
 
               <div class="search__input-wrapper">
                 <span class="search__input-label">Комнатность</span>
-                <ul class="search__input-checkbox">
+                <ul class="search__input-checkbox  search__input-checkbox--closed">
                   <li>
                     <input type="checkbox" name="number" id="studio" value="Студия" class="search__checkbox">
                     <label for="studio">Студия</label>
@@ -84,7 +102,7 @@
 
               <div class="search__input-wrapper">
                 <span class="search__input-label">Год сдачи, до</span>
-                <ul class="search__input-checkbox">
+                <ul class="search__input-checkbox  search__input-checkbox--closed">
                   <li>
                     <input type="checkbox" name="year" id="2017" value="2017" class="search__checkbox">
                     <label for="2017">2017</label>
@@ -103,7 +121,7 @@
                   </li>
                 </ul>
               </div>
-              <button type="button" class="search__input-button">Show</button>
+              <button type="button" class="search__input-button">Показать</button>
             </div>
             <input type="checkbox" name="funds" id="otdelka" value="Отделка">
             <label for="otdelka">Отделка</label>
@@ -118,6 +136,7 @@
           </form>
         </div>
         </div>
+        <section class="appartments">
         <div class="appartments__wrapper">
         <ul class="appartments__list">
           <li class="appartments__item">
@@ -200,5 +219,6 @@
       </div>
     </div>
   </footer>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
