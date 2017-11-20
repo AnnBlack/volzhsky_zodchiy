@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Волжский Зодчий</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="page-header">
+		<nav class="main-nav">
+		  <a href="/" class="main-nav__logo"><img src="img/logo_vlzhz.jpg" alt="logo_vlzhz.jpg"></a>
+		  <ul class="main-nav__items  main-nav__items--closed">
+		    <li class="main-nav__item"><a href="/" class="main-nav__link">Каталог квартир</a></li>
+		    <li class="main-nav__item"><a href="/" class="main-nav__link">Условия покупки</a></li>
+		    <li class="main-nav__item"><a href="/" class="main-nav__link">Акции</a></li>
+		    <li class="main-nav__item"><a href="/" class="main-nav__link">О компании</a></li>
+		    <li class="main-nav__item"><a href="/" class="main-nav__link">Контакты</a></li>
+		  </ul>
+		  <ul class="main-nav__contacts">
+		    <li><a href="mailto:volzhz_doc@bk.ru" class="main-nav__link">volzhz_doc@bk.ru</a></li>
+		    <li><a href="mailto:volzhz_kv@mail.ru" class="main-nav__lin">volzhz_kv@mail.ru</a></li>
+		    <li><a href="tel:+79308100997" class="main-nav__link">+79308100997</a></li>
+		  </ul>
+		<button class="main-nav__button" type="button">Open</button>
+		</nav>
+	</header>
+  <main class="page-main">
+  
+    <div class="subnav">
+    	<ul class="subnav__wrapper">
+    		<li class="subnav__item"><a class="subnav__link" href="index.html">Главная </a>&rarr;</li>
+        <li class="subnav__item"><a class="subnav__link" href="appart.html">ЖК Корабли</a></li>
+    	</ul>
+    </div>
+    <div class="search">
+      <div class="search__wrapper">
+        <span class="search__title">Выбрать квартиру</span>
+        <form class="search__form">
+          <div class="search__input">
+            <div class="search__input-wrapper">
+              <span class="search__input-label">Название ЖК</span>
+              <ul class="search__input-checkbox  search__input-checkbox--closed">
+                <li>
+                  <input type="checkbox" name="complex" id="Burnakovsky" value="ЖК Бурнаковский" class="search__checkbox">
+                  <label for="Burnakovsky">ЖК Бурнаковский</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="complex" id="Monchegoriya" value="ЖК Мончегория" class="search__checkbox">
+                  <label for="Monchegoriya">ЖК Мончегория</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="complex" id="Korably" value="ЖК Корабли" class="search__checkbox">
+                  <label for="Korably">ЖК Корабли</label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="search__input-wrapper">
+              <span class="search__input-label">Комнатность</span>
+              <ul class="search__input-checkbox  search__input-checkbox--closed">
+                <li>
+                  <input type="checkbox" name="number" id="studio" value="Студия" class="search__checkbox">
+                  <label for="studio">Студия</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="number" id="one" value="one" class="search__checkbox">
+                  <label for="one">1-k</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="number" id="two" value="two" class="search__checkbox">
+                  <label for="two">2-k</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="number" id="three" value="three" class="search__checkbox">
+                  <label for="three">3-k</label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="search__input-wrapper">
+              <span class="search__input-label">Год сдачи, до</span>
+              <ul class="search__input-checkbox  search__input-checkbox--closed">
+                <li>
+                  <input type="checkbox" name="year" id="2017" value="2017" class="search__checkbox">
+                  <label for="2017">2017</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="year" id="2018" value="2018" class="search__checkbox">
+                  <label for="2018">2018</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="year" id="2019" value="2019" class="search__checkbox">
+                  <label for="2019">2019</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="year" id="2020" value="2020" class="search__checkbox">
+                  <label for="2020">2020</label>
+                </li>
+              </ul>
+            </div>
+            <button type="button" class="search__input-button">Показать</button>
+          </div>
+          <input type="checkbox" name="funds" id="otdelka" value="Отделка">
+          <label for="otdelka">Отделка</label>
+          
+          <input type="checkbox" name="funds" id="ipoteka" value="Ипотека">
+          <label for="ipoteka">Ипотека</label>
+
+          <input type="checkbox" name="funds" id="kapital" value="Материнский капитал">
+          <label for="kapital">Материнский капитал</label>
+
+          <button type="button" class="button  search__button">Смотреть все квартиры</button>
+        </form>
+      </div>
+    </div>
+    <section class="appartments">
+      <div class="appartments__wrapper">
+        <p class="appratments__search-result">Найдено <span>215</span> квартир</p>
+        <div class="appartments__hub">
+          <ul class="appartments__hub-list">
+            <li class="appartments__hub-item">
+              <img src="img/k-2app453.jpg" alt="k-2app453.jpg" width="150" height="200" class="appartments__hub-img" />
+              <a href="#" class="appartments__hub-link">Квартира №14</a>
+              <span class="appartments__hub-text">Площадь: 36.96 м<sup><small>2</small></sup></span>
+              <span class="appartments__hub-text">Этаж 2/3</span>
+              <a href="#" class="appartments__hub-sublink">ЖК Корабли</a>
+            </li>
+            <li class="appartments__hub-item">
+              <img src="img/k-2app453.jpg" alt="k-2app453.jpg" width="150" height="200" class="appartments__hub-img" />
+              <a href="#" class="appartments__hub-link">Квартира №14</a>
+              <span class="">Площадь: 36.96 м<sup><small>2</small></sup></span>
+              <span class="">Этаж 2/3</span>
+              <a href="#" class="">ЖК Корабли</a>
+            </li>
+            <li class="appartments__hub-item">
+              <img src="img/k-2app453.jpg" alt="k-2app453.jpg" width="150" height="200" class="appartments__hub-img" />
+              <a href="#" class="appartments__hub-link">Квартира №14</a>
+              <span class="">Площадь: 36.96 м<sup><small>2</small></sup></span>
+              <span class="">Этаж 2/3</span>
+              <a href="#" class="">ЖК Корабли</a>
+            </li>
+            <li class="appartments__hub-item">
+              <img src="img/k-2app453.jpg" alt="k-2app453.jpg" width="150" height="200" class="appartments__hub-img" />
+              <a href="#" class="appartments__hub-link">Квартира №14</a>
+              <span class="">Площадь: 36.96 м<sup><small>2</small></sup></span>
+              <span class="">Этаж 2/3</span>
+              <a href="#" class="">ЖК Корабли</a>
+            </li>
+            <li class="appartments__hub-item">
+              <img src="img/k-2app453.jpg" alt="k-2app453.jpg" width="150" height="200" class="appartments__hub-img" />
+              <a href="#" class="appartments__hub-link">Квартира №14</a>
+              <span class="">Площадь: 36.96 м<sup><small>2</small></sup></span>
+              <span class="">Этаж 2/3</span>
+              <a href="#" class="">ЖК Корабли</a>
+            </li>
+          </ul>
+          <button type="button" class="button  search__button">Показать еще</button>
+        </div>
+      </div>
+    </section>
+    <div class="promo-slider  flat-slider">
+      <h2 class="flat-slider__title">ВСЕ КВАРТИРЫ СДАЮТСЯ С ОТДЕЛКОЙ</h2>
+        <div class="promo-slider__wrapper  fade">
+          <img src="img/otdelka_korabli.jpg" alt="otdelka_korabli.jpg" style="width: 100%; height: 450px;">
+        </div>
+        <div class="promo-slider__wrapper  fade">
+          <img src="img/monchegoria.jpeg" alt="monchegoria.jpeg" style="width: 100%; height: 450px;">
+        </div>
+        <div class="promo-slider__wrapper  fade">
+          <img src="img/mikrorajon-burnakovskij.jpg" alt="mikrorajon-burnakovskij" style="width: 100%; height: 450px;">
+        </div>
+        <a onclick="plusSlides(-1)" class="prev">&#10094</a>
+        <a onclick="plusSlides(1)" class="next">&#10095</a>
+<!--         <div class="promo-slider__dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div> -->
+      </div>
+
+    <section class="banks  banks--hidden">
+      <div class="banks__wrapper">
+        <ul class="banks__items">
+          <li class="banks__item"><a href="/"><img src="img/VTB24_Logo.png" alt="vtb" class="banks__link"></a></li>
+          <li class="banks__item"><a href="/"><img src="img/0x430.png" alt="sberbank" class="banks__link"></a></li>
+          <li class="banks__item"><a href="/"><img src="img/Alfa-Bank.svg" alt="alfa-bank" class="banks__link"></a></li>
+          <li class="banks__item"><a href="/"><img src="img/content_Logo_OpenBank.png" alt="otkrytie" class="banks__link"></a></li>
+        </ul>
+        <h2 class="banks__title"><a href="/">УЗНАТЬ ВСЕ УСЛОВИЯ КРЕДИТОВАНИЯ И АКЦИИ</a></h2>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__section">
+        <span class="page-footer__title">О КОМПАНИИ</span>
+        <p class="page-footer__text">ООО “Волжский Зодчий” осуществляет продажу квартир в новостройках по ценам ниже рыночных. Мы предлагаем квартиры только от проверенных застройщиков, с котоыми сотрудничаем сами.</p>
+      </div>
+      <div class="page-footer__section">
+        <span class="page-footer__title">ОБЪЕКТЫ В ПРОДАЖЕ</span>
+        <div class="page-footer__links">
+          <a href="/" class="page-footer__link">ЖК КОРАБЛИ</a><br>
+          <a href="/" class="page-footer__link">ЖК МОНЧЕГОРИЯ</a><br>
+          <a href="/" class="page-footer__link">ЖК БУРНАКОВСКИЙ</a>
+        </div>
+      </div>
+      <div class="page-footer__section">
+        <span class="page-footer__title">ОФИС ПРОДАЖ</span>
+        <div class="page-footer__contacts">
+          <span class="page-footer__contacts-title">Телефоны офиса продаж:</span>
+          <a href="tel:+79308100997" class="page-footer__contacts-tel">+7 (930) 810 09 97</a>
+          <a href="tel:+79200135535" class="page-footer__contacts-tel">+7 (920) 013-55-35</a>
+          <br>
+          <span class="page-footer__contacts-title">Отправить заявку:</span>
+          <a href="mailto:volzhz_kv@mail.ru" class="page-footer__contacts-email">volzhz_kv@mail.ru</a>
+          <a href="mailto:volzhz_doc@bk.ru" class="page-footer__contacts-email">volzhz_doc@bk.ru</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
