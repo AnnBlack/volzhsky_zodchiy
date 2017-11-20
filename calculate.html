@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Волжский Зодчий</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="calculate">
+		<h1 class="calculate__title">Ипотечный калькулятор</h1>
+		<div class="calculate__wrapper">
+			<form action="post" class="calculate__form">
+				<div class="calculate__input-wrap">
+					<label class="calculate__label" for="range1">Стоимость квартиры, руб</label>
+				  <input class="calculate__input" type="text" id="input1" placeholder="1 200 000" />
+				</div>
+				
+				<input type="range" class="calculate__range" min="1000000" max="10000000" step="100000" name="range1" id="range1" oninput="culc1()"/>
+				
+				<div class="calculate__input-wrap">
+				  <label class="calculate__label" for="range2">Первоначальный взнос, руб</label>
+				  <input class="calculate__input" type="text" id="input2" placeholder="0"/>
+				</div>
+				<input type="range" class="calculate__range" min="0" max="10000000" step="50000" name="range2" id="range2" oninput="culc2()" />
+				
+				<div class="calculate__input-wrap">
+					<label class="calculate__label" for="range3">Ставка, %</label>
+					<input class="calculate__input" type="text" id="input3" placeholder="10.00" />
+				</div>
+				<input type="range" class="calculate__range" min="5" max="20" step="5" name="range3" id="range3" oninput="culc3()" />
+				
+				<div class="calculate__input-wrap">
+					<label class="calculate__label" for="range4">Срок кредитования, лет</label>
+					<input class="calculate__input" type="text" id="input4" placeholder="10" />
+				</div>
+				<input type="range" class="calculate__range" min="1" max="31" step="5" name="range4" id="range4" oninput="culc4()" />
+
+			</form>
+			<div class="calculate__result">
+			  <div class="calculate__result-wrapper">
+			  	<h2 class="calculate__result-title">Найдено 10 ипотечных программ</h2>
+			  	<p class="calculate__result-result">Сумма кредита:
+			  		<span class="calculate__result-answer">1 200 000 руб.</span>
+			  	</p>
+			  	<p class="calculate__result-result">Ежемесячный платеж:
+			  		<span class="calculate__result-answer">13 950 руб.</span>
+			  	</p>
+			  	<span class="calculate__result-form">Заявка на ипотеку:</span>
+			  	<div class="calculate__tel-wrapp">
+			  		<input class="calculate__tel-input" type="tel" name="tel" id="tel" placeholder="Ваш телефон">
+			  		<input class="calculate__tel-btn" type="button" name="result-btn" id="result-btn" value="Отправить">
+			  	</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function culc1() {
+		  var range1 = document.getElementById('range1');
+		  var input1 = document.getElementById('input1');
+		  input1.value = range1.value;
+		}
+
+		function culc2() {
+		  var range2 = document.getElementById('range2');
+		  var input2 = document.getElementById('input2');
+		  input2.value = range2.value;
+		}
+
+		function culc3() {
+		  var range3 = document.getElementById('range3');
+		  var input3 = document.getElementById('input3');
+		  input3.value = range3.value;
+		}
+
+		function culc4() {
+		  var range4 = document.getElementById('range4');
+		  var input4 = document.getElementById('input4');
+		  input4.value = range4.value;
+		}
+	</script>
+</body>
+</html>

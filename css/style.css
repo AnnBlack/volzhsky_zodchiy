@@ -254,9 +254,9 @@ a {
 	cursor: pointer;
 }
 
-.appartments__wrapper {
+/*.appartments__wrapper {
   padding: 20px;
-}
+}*/
 
 .appartments__list {
 	display: flex;
@@ -308,6 +308,7 @@ a {
 	.appartments {
 		width: 1100px;
 		margin: 0 auto;
+		margin-bottom: 20px;
   }
 
   .appartments-title {
@@ -323,8 +324,8 @@ a {
 	.appartments__list {
 		flex-direction: row;
     justify-content: space-between;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 	}
 
 	.appartments__item {
@@ -393,7 +394,7 @@ a {
   .search__button {
   	width: 40%;
   	display: block;
-  	margin-top: 40px;
+  	margin-top: 20px;
   	margin-left: auto;
   	margin-right: auto;
   }
@@ -596,7 +597,7 @@ a {
 	.promo-slider {
 		display: block;
 		min-height: 500px;
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 		position: relative;
 	}
 	.promo-slider__slide {
@@ -618,7 +619,7 @@ a {
     text-align: right;
     text-decoration: underline;
     padding-top: 100px;
-    font-size: 40px;
+    font-size: 20px;
     color: white;
 	}
 	.promo-slider__button {
@@ -817,7 +818,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
 	.list-appart {
-	  margin-top: 40px;
+	  margin-top: 20px;
 	}
 	.list-appart__wrapper {
 	  display: flex;
@@ -852,7 +853,7 @@ a {
   width: 100%;
   min-height: 100px;
   background-color: #e8ecef;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .features__wrapper {
@@ -943,7 +944,7 @@ a {
 		display: block;
 		width: 1100px;
 		margin: 0 auto;
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 	}
 	.flat-slider__title {
 		font-weight: 100;
@@ -952,6 +953,410 @@ a {
 	}
 }
 
+.current-appart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.current-appart__title {
+  font-size: 20px;
+}
+
+.current-appart__img {
+
+}
+
+.current-appart__info {
+	border-bottom: 1px solid red;
+	border-left: 1px solid red;
+	border-right: 1px solid red;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px; 
+	min-height: 500px;
+}
+
+.current-appart__info-title {
+	font-size: 24px;
+	color: #df1e20;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.current-appart__info-subtitle {
+	font-size: 24px;
+	text-transform: uppercase;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.current-appart__info-adress {
+	font-size: 20px;
+	font-weight: 100;
+	vertical-align: 24px;
+}
+
+.current-appart__info-free, .current-appart__info-status, .current-appart__info-busy {
+  font-weight: bolder;
+}
+
+.current-appart__info-status::before {
+	content: " ";
+	display: inline-block;
+	vertical-align: middle;
+	width: 10px;
+	height: 10px;
+	border: 5px solid #df1e20;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.current-appart__info-free::before {
+	content: " ";
+	display: inline-block;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #029a36;
+	margin-right: 10px;
+}
+
+.current-appart__info-busy::before {
+	content: " ";
+	display: inline-block;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: orange;
+	margin-right: 10px;
+}
+
+.current-appart__info-table {
+	display: flex;
+	flex-direction: column;
+	margin-top: 25px;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+
+.current-appart__info-table-row {
+	padding-bottom: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.current-appart__info-table-row span:first-child {
+	width: 60%;
+}
+
+.current-appart__info-table-row span:last-child {
+  width: 30%;
+}
+
+.calculate {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+}
+
+.calculate__title {
+	font-size: 20px;
+	color: #df1e20;
+}
+
+.calculate__wrapper {
+	background-color: #eeeeee;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.calculate__form {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 65%;
+	margin-right: 5%;
+}
+
+.calculate__input-wrap {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+.calculate__label {
+	font-size: 16px;
+	color: #df1e20;
+	font-weight: 100;
+}
+
+.calculate__input {
+	border: 1px solid rgb(185, 185, 185);
+	border-radius: 3px;
+	height: 25px;
+	width: 120px;
+	padding-left: 10px;
+	box-sizing: border-box;
+	font-size: 14px;
+	color: #df1e20;
+}
+
+.calculate__result-title, .calculate__result-result {
+	color: #df1e20;
+}
+
+.calculate__result-title {
+	margin-bottom: 80px;
+}
+
+.calculate__result-result {
+  margin-bottom: 30px;
+}
+
+.calculate__result-form {
+	color: #393939;
+	display: block;
+	font-size: 24px;
+	font-weight: bolder;
+	margin-bottom: 10px;
+}
+
+.calculate__tel-wrapp {
+	display: flex;
+}
+
+.calculate__result-answer {
+	font-weight: bolder;
+}
+
+.calculate__tel-input {
+	box-sizing: border-box;
+	width: 70%;
+	height: 40px;
+	padding-left: 10px;
+	border: 1px solid rgb(185, 185, 185);
+	border-radius: 3px;
+	font-size: 18px;
+}
+
+.calculate__tel-btn {
+	width: 40%;
+	height: 40px;
+	border: none;
+	color: white;
+	font-size: 16px;
+	background-color: red;
+	margin-left: -3px;
+}
+
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+
+  /* Hides the slider so custom styles can be added */
+  background: transparent; 
+  border-color: transparent;
+  color: transparent;
+}
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid red;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+/*  margin-top: -14px;  You need to specify a margin in Chrome, but in Firefox and IE it is automatic 
+*/  
+  box-shadow: 1px 1px 1px lightgrey, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px lightgrey, 0px 0px 1px #0d0d0d;
+  border: 1px solid red;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px lightgrey, 0px 0px 1px #0d0d0d;
+  border: 1px solid red;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #484848;
+  border-radius: 1.3px;
+/*  */
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #367ebd;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #484848;
+  border-radius: 1.3px;
+  
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #2a6495;
+  
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #484848;
+}
+input[type=range]::-ms-fill-upper {
+  background: #484848;
+  
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #367ebd;
+}
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 18px 0;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #484848;
+  border-radius: 1.3px;
+  
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px lightgrey, 0px 0px 1px #0d0d0d;
+  border: 1px solid red;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -14px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #367ebd;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #484848;
+  border-radius: 1.3px;
+  
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px lightgrey, 0px 0px 1px #0d0d0d;
+  border: 1px solid red;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #2a6495;
+  
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+  background: #484848;
+  
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px lightgrey, 0px 0px 1px #0d0d0d;
+  border: 1px solid red;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #484848;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #367ebd;
+}
 
 
 
