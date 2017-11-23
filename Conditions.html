@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Волжский Зодчий</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <header class="page-header">
+     <nav class="main-nav">
+       <a href="index.html" class="main-nav__logo"><img src="img/logo_vlzhz.jpg" alt="logo_vlzhz.jpg"></a>
+       <ul class="main-nav__items  main-nav__items--closed">
+         <li class="main-nav__item"><a href="appart.html" class="main-nav__link">Каталог квартир</a></li>
+         <li class="main-nav__item"><a href="conditions.html" class="main-nav__link">Условия покупки</a></li>
+         <li class="main-nav__item"><a href="conditions.html#sale" class="main-nav__link">Акции</a></li>
+         <li class="main-nav__item"><a href="about.html" class="main-nav__link">О компании</a></li>
+         <li class="main-nav__item"><a href="about.html" class="main-nav__link">Контакты</a></li>
+       </ul>
+       <ul class="main-nav__contacts">
+        <li><a href="mailto:volzhz_doc@bk.ru" class="main-nav__link">volzhz_doc@bk.ru</a></li>
+        <li><a href="mailto:volzhz_kv@mail.ru" class="main-nav__lin">volzhz_kv@mail.ru</a></li>
+        <li><a href="tel:+79308100997" class="main-nav__link">+79308100997</a></li>
+      </ul>
+      <button class="main-nav__button" type="button">Open</button>
+     </nav>
+   </header>
+   <main class="page-main">
+    <div class="subnav">
+      <ul class="subnav__wrapper">
+      <li class="subnav__item"><a class="subnav__link" href="index.html">Главная </a>&rarr;</li>
+      <li class="subnav__item  current">Условия покупки</li>
+      </ul>
+    </div>
+    <div class="conditions">
+      <div class="conditions__wrapper">
+        <ul class="conditions__nav">
+          <li class="conditions__item" onclick="openContidion('ipoteka')">Ипотека</li>
+          <li class="conditions__item  conditions__item--current" onclick="openContidion('military')">Военная Ипотека</li>
+          <li class="conditions__item" onclick="openContidion('funds')">Субсидии</li>
+          <li class="conditions__item" onclick="openContidion('sale')">Акции</li>
+        </ul>
+        <div class="conditions__content" id="ipoteka">
+          <h2 class="conditions__title">Ипотека</h2>
+        </div>
+        <div class="conditions__content" id="military" style="display:none">
+          <h2 class="conditions__title">Военная ипотека</h2>
+          <p class="conditions__text">«Военная ипотека» — накопительно-ипотечная система кредитования (НИС)* — инструмент, разработанный для обеспечения жилплощадью военнослужащих и их семей в России. Государственная военная ипотека погашается за счет средств Минобороны РФ.
+          Компания ООО «Волжский Зодчий» - ведущий продавец на рынке строящего жилья Нижнего Новгорода и Нижегородской области поможет разобраться в деталях «Военной ипотеки», подобрать оптимальный вариант квартиры, а также подходящие условия по ипотечному кредиту от банков-партнеров, работающих по программе «Военная ипотека»</p>
+          <br>
+          <h3>Банки, работающие по программе «Военная ипотека»:</h3>
+          <br>
+          <div class="conditions__banks">
+            <ul class="banks__items">
+              <li class="banks__item"><a href="/"><img src="img/VTB24_Logo.png" alt="vtb" class="banks__link" width="200" height="100"></a></li>
+              <li class="banks__item"><a href="/"><img src="img/0x430.png" alt="sberbank" class="banks__link" width="200" height="100"></a></li>
+              <li class="banks__item"><a href="/"><img src="img/Alfa-Bank.svg" alt="alfa-bank" class="banks__link" width="200" height="100"></a></li>
+              <li class="banks__item"><a href="/"><img src="img/content_Logo_OpenBank.png" alt="otkrytie" class="banks__link" width="200" height="100"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="conditions__content" id="funds" style="display:none">
+          <h2 class="conditions__title">Субсидии</h2>
+        </div>
+        <div class="conditions__content" id="sale" style="display:none">
+          <h2 class="conditions__title">Акции</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="calculate">
+    <h1 class="calculate__title">Ипотечный калькулятор</h1>
+    <div class="calculate__wrapper">
+      <form action="post" class="calculate__form">
+        <div class="calculate__input-wrap">
+          <label class="calculate__label" for="range1">Стоимость квартиры, руб</label>
+          <input class="calculate__input" type="text" id="input1" placeholder="1 200 000" />
+        </div>
+        
+        <input type="range" class="calculate__range" min="1000000" max="10000000" step="100000" name="range1" id="range1" oninput="culc1()"/>
+        
+        <div class="calculate__input-wrap">
+          <label class="calculate__label" for="range2">Первоначальный взнос, руб</label>
+          <input class="calculate__input" type="text" id="input2" placeholder="0"/>
+        </div>
+        <input type="range" class="calculate__range" min="0" max="10000000" step="50000" name="range2" id="range2" oninput="culc2()" />
+        
+        <div class="calculate__input-wrap">
+          <label class="calculate__label" for="range3">Ставка, %</label>
+          <input class="calculate__input" type="text" id="input3" placeholder="10.00" />
+        </div>
+        <input type="range" class="calculate__range" min="5" max="20" step="5" name="range3" id="range3" oninput="culc3()" />
+        
+        <div class="calculate__input-wrap">
+          <label class="calculate__label" for="range4">Срок кредитования, лет</label>
+          <input class="calculate__input" type="text" id="input4" placeholder="10" />
+        </div>
+        <input type="range" class="calculate__range" min="1" max="31" step="5" name="range4" id="range4" oninput="culc4()" />
+
+      </form>
+      <div class="calculate__result">
+        <div class="calculate__result-wrapper">
+          <h2 class="calculate__result-title">Найдено 10 ипотечных программ</h2>
+          <p class="calculate__result-result">Сумма кредита:
+            <span class="calculate__result-answer">1 200 000 руб.</span>
+          </p>
+          <p class="calculate__result-result">Ежемесячный платеж:
+            <span class="calculate__result-answer">13 950 руб.</span>
+          </p>
+          <span class="calculate__result-form">Заявка на ипотеку:</span>
+          <div class="calculate__tel-wrapp">
+            <input class="calculate__tel-input" type="tel" name="tel" id="tel" placeholder="Ваш телефон">
+            <input class="calculate__tel-btn" type="button" name="result-btn" id="result-btn" value="Отправить" method="post">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!--end calculate -->
+
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <div class="contacts__text">
+          <h3 class="contacts__title">Телефон отдела продаж</h3>
+          <a href="tel:+79308100997" class="contacts__tel">+7 (930) 810 09 97</a>
+          <br>
+          <a href="tel:+79200135535" class="contacts__tel">+7 (920) 013-55-35</a>
+          <br>
+          <a href="/" class="contacts__adress">Нижний Новгород<br>Янки Купалы, 36</a>
+        </div>
+        <div class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4584.931658202063!2d43.839833684783336!3d56.23720039423585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414e2b9a3217713d%3A0xbf01aa7a48fd1b59!2z0YPQuy4g0K_QvdC60Lgg0JrRg9C_0LDQu9GLLCAzNiwg0J3QuNC20L3QuNC5INCd0L7QstCz0L7RgNC-0LQsINCd0LjQttC10LPQvtGA0L7QtNGB0LrQsNGPINC-0LHQuy4sIDYwMzE0Mg!5e0!3m2!1sru!2sru!4v1510258192444" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__section">
+        <span class="page-footer__title">О КОМПАНИИ</span>
+        <p class="page-footer__text">ООО “Волжский Зодчий” осуществляет продажу квартир в новостройках по ценам ниже рыночных. Мы предлагаем квартиры только от проверенных застройщиков, с котоыми сотрудничаем сами.</p>
+      </div>
+      <div class="page-footer__section">
+        <span class="page-footer__title">ОБЪЕКТЫ В ПРОДАЖЕ</span>
+        <div class="page-footer__links">
+          <a href="/" class="page-footer__link">ЖК КОРАБЛИ</a><br>
+          <a href="/" class="page-footer__link">ЖК МОНЧЕГОРИЯ</a><br>
+          <a href="/" class="page-footer__link">ЖК БУРНАКОВСКИЙ</a>
+        </div>
+      </div>
+      <div class="page-footer__section">
+        <span class="page-footer__title">ОФИС ПРОДАЖ</span>
+        <div class="page-footer__contacts">
+          <span class="page-footer__contacts-title">Телефоны офиса продаж:</span>
+          <a href="tel:+79308100997" class="page-footer__contacts-tel">+7 (930) 810 09 97</a>
+          <a href="tel:+79200135535" class="page-footer__contacts-tel">+7 (920) 013-55-35</a>
+          <br>
+          <span class="page-footer__contacts-title">Отправить заявку:</span>
+          <a href="mailto:volzhz_kv@mail.ru" class="page-footer__contacts-email">volzhz_kv@mail.ru</a>
+          <a href="mailto:volzhz_doc@bk.ru" class="page-footer__contacts-email">volzhz_doc@bk.ru</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript">
+        //табы
+    function openContidion(conditionName) {
+      var i;
+      var x = document.getElementsByClassName("conditions__content");
+      for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none"; 
+      }
+      document.getElementById(conditionName).style.display = "block"; 
+  }
+  </script>
+  <script type="text/javascript">
+    function culc1() {
+      var range1 = document.getElementById('range1');
+      var input1 = document.getElementById('input1');
+      input1.value = range1.value;
+    }
+
+    function culc2() {
+      var range2 = document.getElementById('range2');
+      var input2 = document.getElementById('input2');
+      input2.value = range2.value;
+    }
+
+    function culc3() {
+      var range3 = document.getElementById('range3');
+      var input3 = document.getElementById('input3');
+      input3.value = range3.value;
+    }
+
+    function culc4() {
+      var range4 = document.getElementById('range4');
+      var input4 = document.getElementById('input4');
+      input4.value = range4.value;
+    }
+  </script>
+</body>
+</html>
